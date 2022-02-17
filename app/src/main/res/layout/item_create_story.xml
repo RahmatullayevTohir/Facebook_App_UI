@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:src="@drawable/im_profile2"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/rounder_corner2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Create story"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:background="@drawable/shape_like3"
+            android:layout_gravity="center"
+            android:layout_marginTop="30.5dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:strokeColor="@color/white"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:strokeWidth="1dp"
+            android:padding="1dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+
+        <LinearLayout
+            android:background="@drawable/shape_border_story"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+</LinearLayout>

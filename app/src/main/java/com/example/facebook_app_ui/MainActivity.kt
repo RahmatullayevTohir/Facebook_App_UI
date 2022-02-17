@@ -33,12 +33,12 @@ class MainActivity : AppCompatActivity() {
 
     fun getAllFeeds():ArrayList<Feed>{
         val stories:ArrayList<Story> = ArrayList<Story>()
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
-        stories.add(Story(R.drawable.im_profile,"Tohir"))
+        stories.add(Story(R.drawable.im_profile2,"Tohir"))
+        stories.add(Story(R.drawable.im_profile6,"Akmal"))
+        stories.add(Story(R.drawable.im_profile7,"Abbos"))
+        stories.add(Story(R.drawable.im_profile4,"Nodir"))
+        stories.add(Story(R.drawable.im_profile2,"Tohir"))
+        stories.add(Story(R.drawable.im_profile5,"Sarvar"))
         val feeds: ArrayList<Feed> = ArrayList<Feed>()
         //Head
         feeds.add(Feed())
@@ -46,13 +46,15 @@ class MainActivity : AppCompatActivity() {
         feeds.add(Feed(stories))
         //Post
         feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo1)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Sarvar",R.drawable.im_photo2)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo3)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Botir",R.drawable.im_photo4)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Shaxzod",R.drawable.im_photo1)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Nodir",R.drawable.im_photo2)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo3)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo4)))
+        feeds.add(Feed(Post(R.drawable.im_profile5,"Sarvar",R.drawable.im_photo2)))
+        feeds.add(Feed(Post(R.drawable.im_profile3,"Akmal",R.drawable.im_photo3)))
+        feeds.add(Feed(Post(R.drawable.im_profile4,"Botir",R.drawable.im_photo4)))
+        feeds.add(Feed(Post(R.drawable.im_profile,"Shaxzod",R.drawable.im_photo5)))
+        feeds.add(Feed(Post(R.drawable.im_profile2,"Nodir",R.drawable.im_photo6)))
+        feeds.add(Feed(Post(R.drawable.im_profile6,"Akmal",R.drawable.im_photo3)))
+        feeds.add(Feed(Post(R.drawable.im_profile7,"Abbos",R.drawable.im_photo4)))
+        feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo5)))
+        feeds.add(Feed(Post(R.drawable.im_profile2,"Akmal",R.drawable.im_photo2)))
 
         return feeds
     }
