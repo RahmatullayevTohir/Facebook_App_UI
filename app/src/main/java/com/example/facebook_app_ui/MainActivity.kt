@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     fun getAllFeeds():ArrayList<Feed>{
         val stories:ArrayList<Story> = ArrayList<Story>()
         stories.add(Story(R.drawable.im_profile2,"Tohir"))
+        stories.add(Story(R.drawable.im_photo1,"James Webb"))
         stories.add(Story(R.drawable.im_profile6,"Akmal"))
         stories.add(Story(R.drawable.im_profile7,"Abbos"))
         stories.add(Story(R.drawable.im_profile4,"Nodir"))
@@ -51,10 +52,12 @@ class MainActivity : AppCompatActivity() {
         feeds.add(Feed(Post(R.drawable.im_profile4,"Botir",R.drawable.im_photo4)))
         feeds.add(Feed(Post(R.drawable.im_profile,"Shaxzod",R.drawable.im_photo5)))
         feeds.add(Feed(Post(R.drawable.im_profile2,"Nodir",R.drawable.im_photo6)))
-        feeds.add(Feed(Post(R.drawable.im_profile6,"Akmal",R.drawable.im_photo3)))
-        feeds.add(Feed(Post(R.drawable.im_profile7,"Abbos",R.drawable.im_photo4)))
-        feeds.add(Feed(Post(R.drawable.im_profile,"Akmal",R.drawable.im_photo5)))
-        feeds.add(Feed(Post(R.drawable.im_profile2,"Akmal",R.drawable.im_photo2)))
+        feeds.add(Feed(Post(R.drawable.im_profile6,"Akmal",R.drawable.im_photo7)))
+        feeds.add(Feed(Post(R.drawable.im_profile7,"Abbos",R.drawable.im_photo8)))
+        feeds.add(Feed(Post(R.drawable.im_profile8,"Akmal",R.drawable.im_photo5)))
+        feeds.add(Feed(Post(R.drawable.im_profile9,"Akmal",R.drawable.im_profile9)))
+        feeds.add(Feed(Post(R.drawable.im_profile9,"Akmal",R.drawable.im_photo2)))
+        feeds.add(Feed(Post(R.drawable.im_profile9,"Akmal",R.drawable.im_photo8)))
 
         return feeds
     }

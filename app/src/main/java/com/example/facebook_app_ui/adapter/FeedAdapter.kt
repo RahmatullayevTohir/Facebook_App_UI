@@ -17,6 +17,7 @@ class FeedAdapter(var context: Context, var items:ArrayList<Feed>):RecyclerView.
     private val TYPE_ITEM_HEAD = 0
     private val TYPE_ITEM_STORY = 1
     private val TYPE_ITEM_POST = 2
+    private val TYPE_ITEM_POST_PROFILE = 3
 
     override fun getItemViewType(position: Int): Int {
         var feed = items[position]
@@ -25,6 +26,8 @@ class FeedAdapter(var context: Context, var items:ArrayList<Feed>):RecyclerView.
             return TYPE_ITEM_HEAD
         else if (feed.stories.size>0)
             return TYPE_ITEM_STORY
+        else if (position == 5)
+            return TYPE_ITEM_POST_PROFILE
         return TYPE_ITEM_POST
     }
     override fun getItemCount(): Int {
@@ -38,6 +41,10 @@ class FeedAdapter(var context: Context, var items:ArrayList<Feed>):RecyclerView.
         }else if (viewType == TYPE_ITEM_STORY){
             val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_story,parent,false)
             return StoryViewHolder(context,view)
+        }
+        else if (viewType ==TYPE_ITEM_POST_PROFILE){
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post_profile,parent,false)
+            return PostProfileViewHolder(view)
         }
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_feed_post,parent,false)
         return PostViewHolder(view)
@@ -94,6 +101,10 @@ class FeedAdapter(var context: Context, var items:ArrayList<Feed>):RecyclerView.
             iv_profile = view.findViewById(R.id.iv_profile)
             tv_fullname = view.findViewById(R.id.tv_fullname)
         }
+    }
+
+    class PostProfileViewHolder(view: View):RecyclerView.ViewHolder(view){
+
     }
 
 

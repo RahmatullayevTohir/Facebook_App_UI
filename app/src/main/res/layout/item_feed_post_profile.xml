@@ -13,9 +13,8 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/iv_profile"
             android:scaleType="centerCrop"
-            android:src="@drawable/im_profile"
+            android:src="@drawable/im_profile2"
             app:shapeAppearanceOverlay="@style/circle"
             android:layout_width="45dp"
             android:layout_height="45dp"/>
@@ -26,14 +25,36 @@
             android:gravity="center_vertical|left"
             android:orientation="vertical"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_fullname"
+                    android:text="Rahmatullayev Tohir"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="upadated his"
+                    android:textSize="15sp"
+                    android:textColor="#90000000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_fullname"
-                android:text="Rahmatullayev Tohir"
-                android:textColor="@color/black"
+                android:text="profile picture."
                 android:textSize="15sp"
-                android:textStyle="bold"
+                android:textColor="#90000000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -42,15 +63,15 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/tv_time"
-                    android:text="3d • Tashkent •"
+                    android:text="Dec 25 •"
                     android:textColor="#333333"
                     android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <ImageView
-                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_baseline_south_america_24"
                     android:layout_width="15dp"
                     android:layout_height="15dp"/>
@@ -68,14 +89,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iv_photo"
+        <com.google.android.material.imageview.ShapeableImageView
             android:adjustViewBounds="true"
-            android:src="@drawable/im_photo1"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:src="@drawable/im_profile2"
+            android:scaleType="centerCrop"
+            android:padding="15dp"
+            app:strokeWidth="4dp"
+            app:strokeColor="#839393"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="400dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -118,7 +143,7 @@
             <TextView
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="16dp"
-                android:text="6754"
+                android:text="677"
                 android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -127,7 +152,7 @@
 
         <TextView
             android:layout_marginRight="16dp"
-            android:text="1547 Comments 11 Shares"
+            android:text="47 Comments 5 Shares"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
