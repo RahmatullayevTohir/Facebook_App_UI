@@ -16,7 +16,8 @@
            app:title="facebook"
            app:titleTextColor="@color/black"
            android:layout_width="match_parent"
-           android:layout_height="?attr/actionBarSize">
+           android:layout_height="?attr/actionBarSize"
+           app:layout_scrollFlags="scroll|enterAlways">
 
            <LinearLayout
                android:gravity="center_vertical"
@@ -80,9 +81,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:background="#DCDCDC"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="#DCDCDC"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,22 +1,28 @@
 package com.example.facebook_app_ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
+import android.util.Log
+import android.widget.EditText
+import android.widget.LinearLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.facebook_app_ui.adapter.FeedAdapter
-import com.example.facebook_app_ui.model.Feed
-import com.example.facebook_app_ui.model.Post
-import com.example.facebook_app_ui.model.Story
+import com.example.facebook_app_ui.model.*
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var recyclerView: RecyclerView
+    lateinit var result :Link
+    lateinit var adapter : FeedAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initViews()
+
     }
 
     private fun initViews() {
@@ -24,6 +30,11 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this, 1)
 
         refreshAdapter(getAllFeeds())
+    }
+
+    fun openLinkPostActivity(){
+        val intent = Intent(this, LinkPostActivity::class.java)
+        startActivity(intent)
     }
 
     fun refreshAdapter(feeds:ArrayList<Feed>){
@@ -50,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         feeds.add(Feed(Post(R.drawable.im_profile5,"Sarvar",R.drawable.im_photo2)))
         feeds.add(Feed(Post(R.drawable.im_profile3,"Akmal",R.drawable.im_photo3)))
         feeds.add(Feed(Post(R.drawable.im_profile4,"Botir",R.drawable.im_photo4)))
+        feeds.add(Feed(Pictures(R.drawable.im_profile9,R.drawable.im_photo2,R.drawable.im_photo3,R.drawable.im_photo4,R.drawable.im_photo5)))
         feeds.add(Feed(Post(R.drawable.im_profile,"Shaxzod",R.drawable.im_photo5)))
         feeds.add(Feed(Post(R.drawable.im_profile2,"Nodir",R.drawable.im_photo6)))
         feeds.add(Feed(Post(R.drawable.im_profile6,"Akmal",R.drawable.im_photo7)))
@@ -60,5 +72,25 @@ class MainActivity : AppCompatActivity() {
         feeds.add(Feed(Post(R.drawable.im_profile9,"Akmal",R.drawable.im_photo8)))
 
         return feeds
+    }
+
+    fun openCreateActivity() {
+        val intent = Intent(this, LinkPostActivity::class.java)
+        startActivityForResult(intent, -3)
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        Log.d("RRR", "Main --> $requestCode -- $resultCode")
+        if (requestCode == -3) {
+            Log.d("RRR", "$requestCode -- $resultCode")
+            if (resultCode == RESULT_OK) {
+                result = data?.getParcelableExtra<Parcelable>("object") as Link
+//                result = intent.getParcelableExtra("object")!!
+                Log.d("@@@", result.toString())
+                adapter.addItem(result)
+            }
+        }
     }
 }

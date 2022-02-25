@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/button_border_radius.xml" value="0.1265" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/item_border_liner.xml" value="0.1265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/item_frame_gradiant.xml" value="0.1265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/shape_border_circle.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/shape_border_story.xml" value="0.1265" />
@@ -10,12 +12,16 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/shape_like2.xml" value="0.1265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/shape_like3.xml" value="0.1265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/drawable/textview_border.xml" value="0.1265" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/activity_link_post.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_create_story.xml" value="0.67" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_feed_five_picture.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_feed_head.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_feed_post.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_feed_post_profile.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_feed_story.xml" value="0.10607434270172257" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_five_picture_view.xml" value="0.21" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_link_post.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Facebook_App_UI/app/src/main/res/layout/item_story_view.xml" value="0.33" />
       </map>
     </option>
